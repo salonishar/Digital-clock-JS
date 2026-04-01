@@ -23,7 +23,7 @@ function updateClock(){
     let day = now.getDate();
     if(day<10) day = "0" + day;
 
-    date.innerText = day + "/" + months[(now.getMonth()+1)] + "/" + now.getFullYear();
+    date.innerText = day + "/" + months[(now.getMonth())] + "/" + now.getFullYear();
 }
 
 setInterval(updateClock , 1000);
